@@ -340,7 +340,7 @@ body{
 #counter{
     padding: 10%;
     text-align: center;
-    background-image: url("/images/back-view-crowd-fans-watching-live-performance-music-concert-night-copy-space.jpg");
+    background-image: url("../images/back-view-crowd-fans-watching-live-performance-music-concert-night-copy-space.jpg");
     background-position: center;
     background-size: contain;
     position: relative;
@@ -562,7 +562,7 @@ body{
 #latest{
     padding: 7% 0;
     background-color: #222222;
-    background-image: url("/images/photo_2024-03-19_09-18-39.jpg");
+    background-image: url("../images/photo_2024-03-19_09-18-39.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
