@@ -24,6 +24,11 @@
 </head>
 <body>
 
+  <!-- Preloader Section -->
+  <section class="preloader">
+    <div class="custom-loader"></div>
+  </section>
+
     <header class="header"> 
         <nav class="navbar">
           <a href="" class="navbar-logo">TheLegacyChoir</a>
@@ -119,6 +124,17 @@
         <div class="up"><i class="fa-solid fa-chevron-up fa-xs"></i></div>
     </aside>
 
+
+
+    <script>
+      window.addEventListener("load", () => {
+          const preloader = document.querySelector(".preloader");
+          preloader.classList.add("preloader--hidden");
+          preloader.addEventListener("transitionend", () => {
+              document.body.removeChild(preloader);
+          });
+      });
+    </script>
     <script src="./index.js"></script>
 </body>
 </html>

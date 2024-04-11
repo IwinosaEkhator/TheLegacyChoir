@@ -221,3 +221,18 @@ backToTopButton.addEventListener("click", function () {
    })
 })
 
+
+// Loader Section
+
+window.addEventListener("load", () => {
+    const preloaders = document.querySelectorAll(".preloader");
+    
+    preloaders.forEach((preloader) => {
+        preloader.classList.add("preloader--hidden");
+        preloader.addEventListener("transitionend", () => {
+            document.body.removeChild(preloader);
+        });
+    });
+});
+
+

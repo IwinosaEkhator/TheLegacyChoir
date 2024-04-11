@@ -256,4 +256,9 @@
     .videos-btn {
         margin-top: 50px;
     }
+
+    .custom-loader{
+        top: 46%;
+        left: 41%;
+    }
 }
