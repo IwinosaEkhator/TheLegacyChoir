@@ -562,7 +562,7 @@ body{
 #latest{
     padding: 7% 0;
     background-color: #222222;
-    background-image: url("./images/photo_2024-03-19_09-18-39.jpg");
+    background-image: url("../images/photo_2024-03-19_09-18-39.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -657,7 +657,7 @@ body{
 }
 
 .booking-h{
-    background-image: url("./images/img2.jpg");
+    background-image: url("../images/img2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -745,7 +745,7 @@ body{
 /* Videos Page */
 
 .vidoes-h{
-    background-image: url("./images/man-playing-music-international-jazz-day.jpg");
+    background-image: url("../images/man-playing-music-international-jazz-day.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
