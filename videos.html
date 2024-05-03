@@ -31,12 +31,12 @@
 
     <header class="header"> 
         <nav class="navbar">
-          <a href="" class="navbar-logo">TheLegacyChoir</a>
+          <a href="" class="navbar-logo"><img class="nav-img" src="">TheLegacyChoir</a>
           <ul class="links">
             <li><a href="./index.html" class="nav-links">Home</a></li>
-            <li><a href="#features" class="nav-links">Profiles</a></li>
+            <li><a href="./about.html" class="nav-links">Profile</a></li>
             <li><a href="/videos.html" class="nav-links active">Videos</a></li>
-            <li><a href="#testimonials" class="nav-links">Blog</a></li>
+            <li><a href="./blog.html" class="nav-links">Blog</a></li>
             <li><a href="/contact.html" class="nav-links">Bookings</a></li>
     
           </ul>
@@ -51,11 +51,11 @@
           <hr>
           <li><a href="./index.html">Home</a></li>
           <hr>
-          <li><a href="#features">Profiles</a></li>
+          <li><a href="./about.html">Profiles</a></li>
           <hr>
-          <li><a href="./videos.html">Videos</a></li>
+          <li><a href="./videos.html" class="active">Videos</a></li>
           <hr>
-          <li><a href="#testimonials">Blog</a></li>
+          <li><a href="./blog.html">Blog</a></li>
           <hr>
           <li><a href="./contact.html">Bookings</a></li>
         </div>
@@ -80,44 +80,44 @@
                 </div>
             </div>
             <div class="vid-btn">
-                <a class="videos-btn" href="https://www.youtube.com/@TheLegacyChoir">More Videos</a>
+                <a class="videos-btn" href="https://www.youtube.com/@TheLegacyChoir" target="_blank">More Videos</a>
             </div>
             
         </section>
 
 
 
-    <!-- Footer Section -->
+     <!-- Footer Section -->
 
-    <footer>
-        <div class="footer-top">
-          <div class="bookings">
-            <h3>Bookings</h3>
-            <p>Benin, Nigeria</p>
-            <p>bookings@TheLegacyChoir.com</p>
-          </div>
-          <div class="reach-us">
-            <h3>Reach us Online</h3>
-            <p>www.thelegacychoir.com</p>
-            <p>info@thelegacychoir.com</p>
-            <div>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
-          </div>
+  <footer>
+    <div class="footer-top">
+      <div class="bookings">
+        <h3>Bookings</h3>
+        <p>Benin, Nigeria</p>
+        <p>bookings@TheLegacyChoir.com</p>
       </div>
-      
-      <div class="footer-bottom">
-        <p>Copyright 2022 The Legacy Choir</p>
+      <div class="reach-us">
+        <h3>Reach us Online</h3>
+        <a>www.thelegacychoir.com</a>
+        <p>info@thelegacychoir.com</p>
         <div>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-tiktok"></i>
-          <i class="fa-brands fa-youtube"></i>
+          <a href="https://www.instagram.com/thelegacychoir?igsh=bG0zb3Z1bjdvd3Yw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@thelegacychoir?_t=8lRJJWVZ5zK&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/share/KLppTyRkrzhHNG61/?mibextid=qi2Omg" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
       </div>
-    </footer>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>Copyright 2022 The Legacy Choir</p>
+      <div>
+        <a href="https://www.instagram.com/thelegacychoir?igsh=bG0zb3Z1bjdvd3Yw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/KLppTyRkrzhHNG61/?mibextid=qi2Omg" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@thelegacychoir?_t=8lRJJWVZ5zK&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://youtube.com/@TheLegacyChoir?si=fwOgvcwIWYIPMnQU" target="_blank"></a><i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+  </footer>
   
     <!-- Back to top section -->
     <aside id="back-to-top">
@@ -127,6 +127,15 @@
 
 
     <script>
+
+      const navImage = document.querySelector(".nav-img");
+
+      if (window.scrollY > 700) {
+          navImage.src = "./images/Asset 2.png"
+      } else {
+          navImage.src = "./images/Asset 1.png"
+      }
+
       window.addEventListener("load", () => {
           const preloader = document.querySelector(".preloader");
           preloader.classList.add("preloader--hidden");

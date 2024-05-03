@@ -42,6 +42,17 @@ var navbar = function(manual) {
     });
 }
 
+    const navImage = document.querySelector(".nav-img");
+
+    window.addEventListener("scroll", function() {
+
+        if (window.scrollY > 700) {
+            navImage.src = "./images/Asset 2.png"
+        } else {
+            navImage.src = "./images/Asset 1.png"
+        }
+    } )
+
 
 navLinks.forEach((navLink, i) => {
     navLink.addEventListener("click", () => {
@@ -109,7 +120,7 @@ btns.forEach((btn, i) => {
 
 // Countdown Section
 
-var countDownDate = new Date("May 17, 2024 00:00:00").getTime();
+var countDownDate = new Date("May 19, 2024 00:00:00").getTime();
 var x = setInterval(function(){
     var now = new Date().getTime();
     var distance = countDownDate - now;

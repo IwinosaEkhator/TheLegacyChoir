@@ -90,14 +90,6 @@
         width: 50%;
     }
 
-    @keyframes slide {
-        from{
-            transform: translateX(0);
-        }
-        to{
-            transform: translateX(-300%);
-        }
-    }
 
     /* Countdown Section */
 
@@ -257,8 +249,201 @@
         margin-top: 50px;
     }
 
+
+    /* About Page */
+
+    #about{
+        padding: 45% 10% 10%;
+    }
+
+    #about .header{
+        position: absolute;
+    }
+
+    .about-content h1{
+        font-size: 45px;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .about-content img{
+        display: none;
+    }
+
+    .about-content p{
+        width: 100%;
+    }
+
     .custom-loader{
         top: 46%;
         left: 41%;
     }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    /* Navbar */
+
+    .header{
+        padding: 20px 80px;
+    }
+
+    .header a{
+        font-size: 30px;
+    }
+
+    .navbar-logo{
+        font-size: 30px;
+    }
+
+    .navbar .nav-links{
+        font-size: 20px;
+    }
+
+    /* Home Section */
+
+    #home{
+        height: 100vh;
+        position: relative;
+    }
+
+    .video-container{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-container div{
+        width: 350%;
+        height: 100%;
+    }
+
+    .video-container div img{
+        width: 100%;
+    }
+
+
+    .video-slide{
+        position: absolute;
+        height: 100%;
+        width: 400%;
+    }
+
+    .content{
+        top: 50%;
+    }
+
+    .content h1{
+        font-size: 120px;
+        margin-bottom: 60px;
+    }
+    
+    .content p{
+        font-size: 400;
+        font-size: 25px;
+    }
+
+
+    /* Counter Section */
+
+    .countdown h2{
+        font-size: 55px;
+    }
+
+    .countdown p{
+        font-size: 25px;
+    }
+
+    .launch-time div{
+        flex-basis: 170px;
+    }
+
+
+    .launch-time div span {
+        font-size: 28px;
+    }
+
+
+    /* Gallery Section */
+
+    .gallery-wrapper{
+        display: none;
+    }
+
+
+    /* Bookings Page */
+
+    .booking-h{
+        background-attachment: local;
+    }
+
+    .booking-h h1 {
+        padding: 25% 0 18%;
+    }
+
+    #booking {
+        padding: 3% 20% 4%;
+    }
+
+    .input-group label {
+        font-size: 18px;
+    }
+
+
+    /* Videos Page */
+
+    .vidoes-h{
+        background-attachment: local;
+    }
+
+    .vidoes-h h1{
+        padding: 25% 0 18%;
+    }
+
+
+    .vid-group{
+        justify-content: center;
+    }
+
+    .v-vid2{
+        width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .videos-btn {
+        margin: 50px auto 0;
+        font-size: 25px;
+    }
+
+    /* About Page */
+
+    #about{
+        padding: 15% 10% 10%;
+    }
+
+    .about-content h1{
+        font-size: 45px;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .about-content div{
+        display: block;
+    }
+
+    .about-content img:first-child{
+        display: block;
+        margin: 2% auto 5%;
+    }
+
+    .about-content img:last-child{
+        display: none;
+    }
+
+    .about-content p{
+        width: 100%;
+        font-size: 22px;
+    }
+
 }
