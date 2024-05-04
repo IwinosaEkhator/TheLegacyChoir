@@ -16,7 +16,7 @@
     }
 
     .nav-img{
-        width: 20%;
+        width: 10%;
     }
 
     .navbar .links{
@@ -86,8 +86,12 @@
         flex-wrap: wrap;
     }
 
-    .som-logo{
+    .som-row a{
         width: 50%;
+    }
+
+    .som-logo{
+        width: 100%;
     }
 
 
@@ -272,6 +276,13 @@
 
     .about-content p{
         width: 100%;
+    }
+
+    /* Blog Page */
+
+    .card-container{
+        justify-content: center;
+        align-items: center;
     }
 
     .custom-loader{

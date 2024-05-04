@@ -30,6 +30,7 @@ toggleBtn.onclick = function () {
 
 
 const navLinks = document.querySelectorAll(".nav-links");
+const navImages = document.querySelectorAll(".nav-img");
 
 var navbar = function(manual) {
     // Handle button navigation
@@ -41,17 +42,6 @@ var navbar = function(manual) {
         }
     });
 }
-
-    const navImage = document.querySelector(".nav-img");
-
-    window.addEventListener("scroll", function() {
-
-        if (window.scrollY > 700) {
-            navImage.src = "./images/Asset 2.png"
-        } else {
-            navImage.src = "./images/Asset 1.png"
-        }
-    } )
 
 
 navLinks.forEach((navLink, i) => {
